@@ -350,8 +350,11 @@ input[type=text]{
     font-size: 2.5rem;
 
     background-image:
-        linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 0, 0.9)),
-        url('https://preview.redd.it/8o73zmqk48hy.jpg?auto=webp&s=912a468e50241a756e5cf18ed8a5876409b23877');
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 0, 75, 0.8)),
+        url('https://www.albany.edu/sites/default/files/keynote-speaker.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .horizontalLine {
