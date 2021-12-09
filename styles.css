@@ -1,0 +1,362 @@
+html, body {
+    height: 100%;
+    margin: 0%;
+    font-family: monospace;
+
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.material-icons-outlined {
+    align-self: center;
+    color: dodgerblue;
+    cursor: default;
+}
+
+.material-icons-outlined.md-18 {font-size: 18px;}
+.material-icons-outlined.md-24 {font-size: 24px;}
+.material-icons-outlined.md-36 {font-size: 36px;}
+.material-icons-outlined.md-48 {font-size: 48px;}
+
+.mainHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: white;
+    color: black;
+    font-size: 1.25vw;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    padding: 1.5rem 2rem;
+    height: 5vh;
+    margin: 0;
+}
+
+.headerAnchors {
+    display: flex;
+}
+
+.headerAnchors a {
+    background-color: white;
+
+    transition: background-color 250ms ease-in;
+
+    padding: 1rem;
+}
+
+.headerAnchors a:hover {
+    background-color: #eee;
+
+    transition: background-color 250ms ease-out;
+}
+
+.headerLogo {
+    justify-self: flex-start;
+
+    background-color: dodgerblue;
+    color: white;
+
+    transition: background-color 250ms ease-in,
+                color 250ms ease-in;
+
+    padding: 1rem 1.5rem;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.headerLogo:hover {
+    background-color: #eee;
+    color: black;
+
+    transition: background-color 250ms ease-out,
+                color 250ms ease-out;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+
+    background-color: grey;
+    font-size: 5vw;
+}
+
+#landing {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 255, 0.7)),
+        url('https://www.albany.edu/sites/default/files/keynote-speaker.jpg');
+    font-size: 5vw;
+
+    padding: 15vh 20rem;
+    height: 70vh;
+
+}
+
+input[type=text]{
+    width: 40vw;
+    font-size: 1.5vw;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #FF8D1E;
+    color: white;
+    cursor: pointer;
+
+    transition: background-color 250ms ease-in;
+
+    width: 10vw;
+    padding: 1rem;
+    font-size: 1.5vw;
+    border: 1px solid #FF8D1E;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: background-color 250ms ease-out;
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: white;
+
+    font-size: 3vw;
+    padding: 35vh 10rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-size: 1.5vw;
+    color: black;
+}
+
+.info p {
+    font-size: 1.25vw;
+    color: #555;
+}
+
+#funcionalidades {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    gap: 20rem;
+
+    background-color: white;
+    color: white;
+
+    padding: 20vh 10rem;
+}
+
+#funcionalidades img {
+    width: 382px;
+    height: 723px;
+}
+
+.funcionalidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+
+    width: 100%;
+}
+
+.mockupInfo {
+    font-size: 1.75vw;
+    color: black;
+}
+
+.mockupInfo p {
+    color: #555;
+}
+
+.mainFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    background: linear-gradient(#fff, #ccc);
+    font-size: 1.25vw;
+
+    padding: 4rem 7rem;
+}
+
+.footerSections {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section p {
+    margin: 0;
+}
+
+.section a {
+    color: #555;
+}
+
+.copyright {
+    color: #555;
+    align-self: center;
+}
+
+#publicoAlvo {
+    padding: 10%;
+    background-color: white;
+    text-align: center;
+    font-size: 1.75vw;
+}
+
+.gridImagensPublico {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    text-align: left;
+    padding-top: 3rem;
+}
+
+.imagemPublico {
+    width: 30%;
+    height: 100%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+}
+
+.imagemPublico img {
+    background-color: white;
+    background-size: 100%;
+    width: 100%;
+    height: 90%;
+    object-fit: fill;
+}
+
+.imagemPublico p {
+    padding-left: 3%;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainHeader {
+        display: none;
+    }
+
+    .landing {
+        text-justify: center;
+    }
+
+    .landingForm {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    input[type=submit] {
+        width: 40vw;
+    }
+
+    #sobre {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .info h1 {
+        font-size: 3vw;
+    }
+
+    .info p {
+        display: none;
+    }
+
+    .gridImagensPublico {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .imagemPublico {
+        width: 70vw;
+    }
+
+    .imagemPublico p {
+        font-size: 1.25vw;
+    }
+
+    .mainFooter {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        font-size: 2vw;
+        text-justify: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+.checkin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 0, 0.9)),
+        url('https://preview.redd.it/8o73zmqk48hy.jpg?auto=webp&s=912a468e50241a756e5cf18ed8a5876409b23877');
+}
+
+.horizontalLine {
+    width: 50rem;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 100px;
+}
